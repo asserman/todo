@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import AppHeader from './components/app-header';
 import SearchPanel from './components/search-panel';
-import TodoList from './components/todo-list.js';
+import TodoList from './components/todo-list';
 import ItemStatusfilter from './components/item-status-filter';
 
 
