@@ -4,12 +4,13 @@ import ReactDOM from "react-dom";
 import AppHeader from './components/app-header';
 import SearchPanel from './components/search-panel';
 import TodoList from './components/todo-list.js';
+import ItemStatusfilter from './components/item-status-filter';
 
 
 const todoData = [
-    {label: "Drink Coffe", important: false},
-    {label: "Make Awesome App" , important: true},
-    {label: "Have a lunch" }   
+    {label: "Drink Coffe", important: false, id: 1},
+    {label: "Make Awesome App" , important: true, id: 2},
+    {label: "Have a lunch" ,id: 3}   
 ]
 //login = !login;
 const App = () => {
@@ -17,8 +18,12 @@ const App = () => {
     return (
         <div>
             <AppHeader />
-            <SearchPanel />
+            
+            <SearchPanel /> <ItemStatusfilter />
+            
             <TodoList todos = {todoData} />
+
+
         </div>
     );
 }
