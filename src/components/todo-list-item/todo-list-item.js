@@ -21,10 +21,8 @@ const TodoListItem =( {label, important = false} ) => {
                 className ="btn btn-outline succes btn-sm">
                 <i className= "fa fa-exclamation" />
             </button>
-            
     </span>
-
-     );
+    );
 };
 
 export default TodoListItem;
